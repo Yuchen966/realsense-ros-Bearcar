@@ -99,7 +99,7 @@ namespace realsense2_camera
                           std::shared_ptr<Parameters> parameters,
                           bool use_intra_process = false);
         ~BaseRealSenseNode();
-        void publishTopics();
+        virtual void publishTopics();
 
     public:
         enum class imu_sync_method{NONE, COPY, LINEAR_INTERPOLATION};
